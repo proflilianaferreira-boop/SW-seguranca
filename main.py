@@ -3,7 +3,7 @@ password = 'Seg_2028!'
 bytes = password.encode('utf-8')
 salt = bcrypt.gensalt()
 hash = bcrypt.hashpw(bytes, salt)
-userPassword =  input('Indique a password:')
+userPassword =  input('Indique a palavra Passe:')
 userBytes = userPassword.encode('utf-8')
 result = bcrypt.checkpw(userBytes, hash)
 if result: print ("Palavra Passe Correta.") 
